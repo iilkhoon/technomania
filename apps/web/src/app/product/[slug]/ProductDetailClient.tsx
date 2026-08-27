@@ -1124,7 +1124,7 @@ export default function ProductDetailClient({
         items: [
           {
             id: product?.id,
-            name: product?.model_name || product?.name,
+            name: product?.model_name || (product as any)?.name || 'Məhsul',
             price: finalAmount,
             qty: 1,
             color: selectedColor || undefined,
@@ -2234,7 +2234,7 @@ export default function ProductDetailClient({
                 <div>
                   <h3 className="font-black text-lg">Bir Kliklə Express Alış</h3>
                   <p className="text-white/80 text-xs truncate max-w-[280px] sm:max-w-md">
-                    {product?.model_name || product?.name}
+                    {product?.model_name || (product as any)?.name || 'Məhsul'}
                   </p>
                 </div>
               </div>
