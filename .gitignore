@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+
+# Testing & Coverage
+coverage/
+**/coverage/
+
+# Next.js & Web builds
+.next/
+**/.next/
+out/
+**/out/
+build/
+**/build/
+dist/
+**/dist/
+
+# Expo & Mobile
+.expo/
+**/.expo/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+
+# Storage uploaded media (exclude large user uploads)
+/storage/products/*
+/storage/banners/*
+/storage/stories/*
+/storage/logos/*
+/storage/categories/*
+/storage/avatars/*
+!/storage/.gitkeep
+
+# Logs & debug
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# OS & IDE files
+.DS_Store
+*.pem
+.vscode/
+.idea/
+*.tsbuildinfo
+next-env.d.ts
